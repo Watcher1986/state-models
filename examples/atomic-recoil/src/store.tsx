@@ -16,7 +16,8 @@ export const secondsAtom = atom({ key: 'seconds', default: 0 });
 
 export const namesAtom = selector({
   key: 'namesAtom',
-  get: ({ get }) => (get(secondsAtom) > 2.0 ? get(namesValueAtom) : ''),
+  get: ({ get }: { get: any }) =>
+    get(secondsAtom) > 2.0 ? get(namesValueAtom) : '',
 });
 
 export const runningAtom = atom({ key: 'running', default: false });
@@ -36,7 +37,7 @@ export const useStopwatch = () => {
   useEffect(() => {
     if (running) {
       const interval = window.setInterval(() => {
-        setSeconds((seconds) => seconds + 0.1);
+        setSeconds((seconds: number) => seconds + 0.1);
       }, 100);
       return () => clearInterval(interval);
     }

@@ -779,6 +779,11 @@ concurrently@^5.2.0:
     tree-kill "^1.2.2"
     yargs "^13.3.0"
 
+constate@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/constate/-/constate-3.3.2.tgz#a6cd2f3c203da2cb863f47d22a330b833936c449"
+  integrity sha512-ZnEWiwU6QUTil41D5EGpA7pbqAPGvnR9kBjko8DzVIxpC60mdNKrP568tT5WLJPAxAOtJqJw60+h79ot/Uz1+Q==
+
 convert-source-map@^1.7.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
@@ -1719,6 +1724,13 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-hooks-global-state@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-hooks-global-state/-/react-hooks-global-state-2.1.0.tgz#91d1d85c6c920f2e8681579d71d552207c5fe4ac"
+  integrity sha512-tLSRhB5pD3QiNsGOo893m8lVZXDuIkdin8PKKmGqnJniAaD/tzl3BdAkba1vOv1/q1bpuN+9zrqqAHkRJhXzJw==
+  dependencies:
+    zustand "4.0.0"
+
 react-query@^3.39.3:
   version "3.39.3"
   resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.39.3.tgz#4cea7127c6c26bdea2de5fb63e51044330b03f35"
@@ -2356,3 +2368,10 @@ yargs@^13.0.0, yargs@^13.3.0:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
+
+zustand@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.0.0.tgz#739cba69209ffe67b31e7d6741c25b51496114a7"
+  integrity sha512-OrsfQTnRXF1LZ9/vR/IqN9ws5EXUhb149xmPjErZnUrkgxS/gAHGy2dPNIVkVvoxrVe1sIydn4JjF0dYHmGeeQ==
+  dependencies:
+    use-sync-external-store "1.2.0"
